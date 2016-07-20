@@ -1,11 +1,11 @@
 <header class='header'>
-  <div class='float-left'>
-    <img class='header-pic' src="/logo_small.png" alt='DoWhop logo'>
-  </div>
   <div class='h-68'>
+    <div class='float-left'>
+      <a href="/"><img class='header-pic' src="/logo_small.png" alt='DoWhop logo'></a>
+    </div>
     <nav>
       <ul>
-        <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-0'><a class='nav-links no-underline' href="#">0</a></div></li>
+        <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-0'><a class='nav-links no-underline nav-zero' href="#">0</a></div></li>
         <li class="no-bullets no-underline"><div class='red-bubble-for-do'><a class='nav-links no-underline do-link' href="#">DO</a></div></li>
         <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">FAQ</a></li>
         <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CAREERS</a></li>
@@ -13,8 +13,8 @@
         <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CREATE</a></li>
         <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">EXPLORE</a></li>
         <% if user_signed_in? %>
-          <li class="no-bullets no-underline padding-right-15"><%= link_to "hello, #{current_user.first_name.capitalize}", new_user_session_path, class: 'nav-links no-underline' %></li>
-          <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+          <li class="no-bullets no-underline padding-right-15"><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete, class: 'nav-links no-underline' %></li>
+          # <!-- <li class="no-bullets no-underline padding-right-15">hello, </li> -->
         <% else %>
           <li class="no-bullets no-underline padding-right-15"><%= link_to 'LOG IN', new_user_session_path, class: 'nav-links no-underline' %></li>
         <% end %>
@@ -22,3 +22,15 @@
     </nav>
   </div>
 </header>
+
+<div class='how-it-works-div'>
+  <h1><span class='how-it-works-text'>HOW IT WORKS</span></h1>
+  <iframe class='how-it-works-video' src="https://youtu.be/wL6k43HZNpw"></iframe>
+  <div class='how-it-works-info-box'>
+    <p><span class='white align-top'>Our marketplace is made possible<br>by wonderful people like you who<br>do incredible things together.</span></p>
+    <p>On this site you can:</p>
+    <p><i class="fa fa-map-marker"></i><span class='redish'>EXPLORE</span> local experiences and connect with your community</p>
+    <p><span class='redish'>CREATE</span> opportunities for others to join you in what you love</p>
+    <p><span class='redish'>DO</span> the experiences that someone around you created</p>
+  </div>
+</div>
