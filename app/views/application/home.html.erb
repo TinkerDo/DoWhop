@@ -1,5 +1,24 @@
-<% if user_signed_in? %>
-  <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
-<% else %>
-  <%= link_to "Sign In", new_user_session_path %>
-<% end %>
+<header class='header'>
+  <div class='float-left'>
+    <img class='header-pic' src="/logo_small.png" alt='DoWhop logo'>
+  </div>
+  <div class='float-right h-100'>
+    <nav>
+      <ul>
+        <% if user_signed_in? %>
+          <li class="no-bullets no-underline padding-right-15"><%= link_to "hello, #{current_user.first_name.capitalize}", new_user_session_path, class: 'nav-links no-underline' %></li>
+          <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+        <% else %>
+          <li class="no-bullets no-underline padding-right-15"><%= link_to 'LOG IN', new_user_session_path, class: 'nav-links no-underline' %></li>
+        <% end %>
+        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">EXPLORE</a></li>
+        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CREATE</a></li>
+        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CONNECT</a></li>
+        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CAREERS</a></li>
+        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">FAQ</a></li>
+        <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-do'><a class='nav-links no-underline' href="#">DO</a></div></li>
+        <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-0'><a class='nav-links no-underline' href="#">0</a></div></li>
+      </ul>
+    </nav>
+  </div>
+</header>
