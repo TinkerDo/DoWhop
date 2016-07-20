@@ -1,19 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<fieldset>
+  <legend>User:</legend>
+  <p>First name:<%= @user.first_name %></p>
+  <p>Last name:<%= @user.last_name %></p>
+  <p>Email:<%= @user.email %></p>
+</fieldset>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+<fieldset style="left:40px;border:solid black 2px;">
+  <legend>Attending:</legend>
+  <p><br>
+    <% if @user.attending.empty? %>
+      <p> No events. </p>
+    <% else %>
+      <% @user.attending.each do |event| %>
+        Name: <%= event.name %><br>
+        Cost: <%= event.cost %><br>
+        Description: <%= event.description %><br>
+        Location: <%= event.location %><br>
+        Host: <%= event.user.full_name %><br>
+        Host Email: <%= event.user.email %><br><br>
+      <% end %>
+    <% end %>
+  </p>
+</fieldset>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<fieldset style="left:40px;border:solid black 2px;">
+  <legend>Hosting:</legend>
+  <p><br>
+    <% if @user.hosting.empty? %>
+      <p> No events. </p>
+    <% else %>
+      <% @user.hosting.each do |event| %>
+        Name: <%= event.name %><br>
+        Cost: <%= event.cost %><br>
+        Description: <%= event.description %><br>
+        Location: <%= event.location %><br><br>
+      <% end %>
+    <% end %>
+    <button style="padding:7px 15px 7px 15px;border-radius:20px;background-color:green;"><%= link_to 'Add New Event', new_event_path, style: 'text-decoration:none;color:white;' %></button><br>
+  </p>
+</fieldset>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Home', root_path %>
