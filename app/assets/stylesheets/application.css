@@ -98,13 +98,13 @@ nav li {
 }
 
 .nav-zero {
-  padding-left: 7px;
+  padding-left: 8px;
 }
 
 .how-it-works-div {
   height: 576px;
   background-color: #2F2E2E;
-  margin-top: 200px;
+  margin-top: 20px;
   text-align: center;
   padding-top: 40px;
   position: inline-block;

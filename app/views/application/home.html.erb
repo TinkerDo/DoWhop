@@ -23,6 +23,136 @@
   </div>
 </header>
 
+<style>
+.mySlides { display: none; }
+.small-slide { opacity: 0.75; }
+.scroll-container-outer { overflow: scroll; overflow-y: hidden;}
+.scroll-container-inner { width: 10000px; }
+</style>
+
+<div style="max-width:100%;height:568px;">
+  <div id="transparent-box" style="position:absolute;left:7%;top:2.5%;width:423px;height:477px;background-color:white;opacity:0.75;">
+    <img src="/logo_large.gif" style="width:410px;height:135px;opacity:1;position:relative;left:2%;">
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:38px;left:32%;top:3%;position:relative;">DoWhop</span>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:23px;left:-20%;top:10%;position:relative;">The Marketplace for Doing</span>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:16px;left:25%;top:12%;position:relative;">Buy & Sell what you love to do!</span><br>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:16px;left:16%;top:12%;position:relative;">Every listing is an opportunity to connect with <br> someone and DoWhop you love to do.</span><br>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:16px;left:16%;top:17%;position:relative;">Buy <br> an in person <br> experience</span><br>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:38px;left:46%;top:7%;position:relative;">&</span><br>
+    <span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;font-size:16px;left:60%;top:-3%;position:relative;">Sell <br> what you love <br> to do</span>
+    <button style="color:white;background-color:#D32300;padding:7px 20px 7px 20px;border-radius:20px;font-size:10px;position:relative;left:29%;top:7%;">Explore</button>
+  </div>
+  <img class="mySlides" src="/homepage slidey/1sail.jpg" style="width:100%;height:508px;display:block;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/2spearfish.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/3fly.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/4pool.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/5breakdance.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/6surf.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/7blowup.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/8restore.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/9dj.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/10style.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/11pottery.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/12scuba.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/13laundry.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/14hike.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/15helicopter.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/16skateboard.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/17cabinetry.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/18bike.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/19ski.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/20sail.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/21paint.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/22volleyball.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/23canoe.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/24mathematics.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/25blueprints.jpg" style="width:100%;height:508px;object-fit:cover;">
+  <img class="mySlides" src="/homepage slidey/26guitar.jpg" style="width:100%;height:508px;object-fit:cover;">
+
+  <div class="scroll-container-outer">
+    <div class="scroll-container-inner">
+      <div>
+        <img class="small-slide" src="/homepage slidey/1sail.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;opacity:1;" onclick="currentDiv(1)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/2spearfish.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(2)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/3fly.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(3)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/4pool.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(4)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/5breakdance.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(5)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/6surf.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(6)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/7blowup.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(7)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/8restore.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(8)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/9dj.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(9)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/10style.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(10)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/11pottery.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(11)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/12scuba.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(12)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/13laundry.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(13)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/14hike.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(14)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/15helicopter.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(15)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/16skateboard.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(16)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/17cabinetry.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(17)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/18bike.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(18)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/19ski.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(19)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/20sail.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(20)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/21paint.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(21)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/22volleyball.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(22)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/23canoe.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(23)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/24mathematics.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(24)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/25blueprints.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(25)">
+      </div>
+      <div>
+        <img class="small-slide" src="/homepage slidey/26guitar.jpg" style="float:left;height:52px;margin:10px 10px 0px 0px;" onclick="currentDiv(26)">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class='how-it-works-div'>
   <h1><span class='how-it-works-text'>HOW IT WORKS</span></h1>
   <iframe class='how-it-works-video' src="https://youtu.be/wL6k43HZNpw"></iframe>
