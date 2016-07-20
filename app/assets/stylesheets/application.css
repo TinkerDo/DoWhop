@@ -124,12 +124,12 @@ nav li {
 
 .how-it-works-info-box {
   text-align: left;
-  height: 368px;
+  height: 338px;
   width: 378px;
   display: inline-block;
   background-color: #ACABAE;
   margin-left: 15px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .white {
@@ -144,6 +144,12 @@ nav li {
   color: #D32300;
 }
 
-.fa-map-marker {
-  font-size: 1.5em;
+.fa {
+  display: inline-block;
+}
+
+.info-box-text {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
 }
