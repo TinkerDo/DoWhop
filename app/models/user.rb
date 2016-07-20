@@ -4,6 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :hosted_events, class_name: :Event
-  has_many :attended_events, class_name: :Event
+  has_many :attendances, :foreign_key => "attendee_id", :dependent => :destroy
+  has_many :attending, :through => :attendances, :source => :event
+  has_many :hosting, class_name: "Event", foreign_key: "host_id"
+
+  def full_name
+    "#{self.first_name.capitalize} #{self.last_name.capitalize}"
+  end
 end

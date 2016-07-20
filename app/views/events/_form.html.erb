@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :cost %>
-    <%= f.number_field :cost %>
+    <%= f.text_field :cost %>
   </div>
 
   <div class="field">
@@ -31,15 +31,7 @@
     <%= f.text_field :location %>
   </div>
 
-  <div class="field">
-    <%= f.label :time %>
-    <%= f.time_select :time %>
-  </div>
-
-  <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
-  </div>
+  <%= f.hidden_field :host_id, value: current_user.id %>
 
   <div class="actions">
     <%= f.submit %>
