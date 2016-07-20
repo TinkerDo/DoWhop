@@ -2,13 +2,41 @@
 <html>
   <head>
     <title>DoWhop</title>
+    <link rel="icon" href="/favicon.ico" />
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
 
   <body>
+    <header class='header'>
+      <div class='h-68'>
+        <div class='float-left'>
+          <a href="/"><img class='header-pic' src="/logo_small.png" alt='DoWhop logo'></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-0'><a class='nav-links no-underline nav-zero' href="#">0</a></div></li>
+            <li class="no-bullets no-underline"><div class='red-bubble-for-do'><a class='nav-links no-underline do-link' href="#">DO</a></div></li>
+            <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">FAQ</a></li>
+            <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CAREERS</a></li>
+            <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CONNECT</a></li>
+            <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CREATE</a></li>
+            <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">EXPLORE</a></li>
+            <% if user_signed_in? %>
+              <li class="no-bullets no-underline padding-right-15"><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete, class: 'nav-links no-underline' %></li>
+              <li class="no-bullets no-underline padding-right-15"><%= link_to "hello, #{ current_user.first_name }", user_path(current_user), class: 'nav-links no-underline' %></li>
+            <% else %>
+              <li class="no-bullets no-underline padding-right-15"><%= link_to 'LOG IN', new_user_session_path, class: 'nav-links no-underline' %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class='buffer'></div>
     <%= yield %>
   </body>
 </html>

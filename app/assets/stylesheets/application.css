@@ -14,8 +14,22 @@
  *= require_self
  */
 
+html, body {
+  margin:0;
+  padding:0;
+}
+
+* {
+  font-family: 'Nunito lt', sans-serif;
+  font-weight: 100;
+}
+
+header * {
+  border: solid transparent 1px;
+}
+
 .no-bullets {
-  text-decoration: none;
+  list-style: none;
 }
 
 .no-underline {
@@ -30,39 +44,116 @@
   float: left;
 }
 
-.float-right {
-  float: right;
-}
-
-.h-100 {
-  height: 85px;
+.h-68 {
+  background: linear-gradient(to bottom right, gray, #2F2E2E);
+  height: 68px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 50;
+  padding-top: 3px;
 }
 
 .header-pic {
-  height: 75px;
-  width: 65px;
+  height: 52px;
+  width: 48px;
+  padding-top: 7px;
+  margin-left: 9px;
 }
 
 .header {
   background-color: #2F2E2E;
+  width: 100%;
 }
 
 .nav-links {
-  font-size: 1em;
+  font-size: .6em;
+  color: white;
+  transition: color 0.5s ease;
 }
 
 .nav-links:hover {
-  color: #2F2E2E;
+  color: #606060;
 }
 
 .red-bubble-for-do {
   height: 25px;
-  width: 50px;
+  width: 35px;
   border-radius: 20px;
+  background-color: #D32300;
+  padding-left: 20px;
 }
 
 .red-bubble-for-0 {
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   border-radius: 20px;
+  background-color: #D32300;
+  margin-top: 2px;
+}
+
+nav li {
+  float: right;
+}
+
+.nav-zero {
+  padding-left: 8px;
+}
+
+.how-it-works-div {
+  height: 576px;
+  background-color: #2F2E2E;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 40px;
+  position: inline-block;
+}
+
+.how-it-works-text {
+  color: white;
+}
+
+.how-it-works-video {
+  height: 364px;
+  width: 566px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.how-it-works-info-box {
+  text-align: left;
+  height: 338px;
+  width: 378px;
+  display: inline-block;
+  background-color: #ACABAE;
+  margin-left: 15px;
+  padding: 15px;
+}
+
+.white {
+  color: white;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.redish {
+  color: #D32300;
+}
+
+.fa {
+  display: inline-block;
+}
+
+.info-box-text {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.buffer {
+  height: 85px;
 }
