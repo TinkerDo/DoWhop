@@ -153,3 +153,7 @@ nav li {
   width: 80%;
   padding-left: 10px;
 }
+
+.buffer {
+  height: 85px;
+}

@@ -1,28 +1,3 @@
-<header class='header'>
-  <div class='h-68'>
-    <div class='float-left'>
-      <a href="/"><img class='header-pic' src="/logo_small.png" alt='DoWhop logo'></a>
-    </div>
-    <nav>
-      <ul>
-        <li class="no-bullets no-underline padding-right-15"><div class='red-bubble-for-0'><a class='nav-links no-underline nav-zero' href="#">0</a></div></li>
-        <li class="no-bullets no-underline"><div class='red-bubble-for-do'><a class='nav-links no-underline do-link' href="#">DO</a></div></li>
-        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">FAQ</a></li>
-        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CAREERS</a></li>
-        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CONNECT</a></li>
-        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">CREATE</a></li>
-        <li class="no-bullets no-underline padding-right-15"><a class='nav-links no-underline' href="#">EXPLORE</a></li>
-        <% if user_signed_in? %>
-          <li class="no-bullets no-underline padding-right-15"><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete, class: 'nav-links no-underline' %></li>
-          # <!-- <li class="no-bullets no-underline padding-right-15">hello, </li> -->
-        <% else %>
-          <li class="no-bullets no-underline padding-right-15"><%= link_to 'LOG IN', new_user_session_path, class: 'nav-links no-underline' %></li>
-        <% end %>
-      </ul>
-    </nav>
-  </div>
-</header>
-
 <style>
 .mySlides { display: none; }
 .small-slide { opacity: 0.75; }
