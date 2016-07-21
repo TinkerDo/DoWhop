@@ -157,3 +157,11 @@ nav li {
 .buffer {
   height: 85px;
 }
+
+.sub-btn {
+  background-color: green;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.1em;
+}

@@ -20,11 +20,15 @@
   <%= @event.location %>
 </p>
 
-<%= form_for(Attendance.new) do |f| %>
-  <%= f.hidden_field :attendee_id, value: current_user.id %>
-  <%= f.hidden_field :event_id, value: @event.id %>
-  <%= f.submit %>
+<% unless @event.host_id == current_user.id %>
+  <%= form_for(Attendance.new) do |f| %>
+    <%= f.hidden_field :attendee_id, value: current_user.id %>
+    <%= f.hidden_field :event_id, value: @event.id %>
+    <%= f.submit 'Join this event!', :class => 'sub-btn' %>
+  <% end %>
 <% end %>
 
+<br>
+<br>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Home', root_path %>
